@@ -1,0 +1,255 @@
+@import url("https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@400;700&family=Saira:wght@300;400&display=swap");
+/* 
+font-family: 'Saira', sans-serif;
+font-family: 'Saira Condensed', sans-serif; */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+header {
+	position: relative;
+	height: 100vh;
+	background-color: #29a6dc;
+	overflow: hidden;
+	max-width: 1920px;
+	margin: 0 auto;
+}
+
+header > * {
+	position: absolute;
+}
+header img {
+	height: 50%;
+	bottom: 0;
+	right: 0;
+}
+
+header div.welcome {
+	z-index: 1;
+	top: 7%;
+	left: 5%;
+	right: 5%;
+	font-family: "Saira Condensed", sans-serif;
+	color: white;
+	font-size: 40px;
+	font-weight: bold;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+header h1 {
+	font-size: 20px;
+	margin-top: 15px;
+}
+
+header h2 {
+	/* font-family: "Saira", sans-serif; */
+	font-size: 20px;
+	font-weight: normal;
+}
+
+header button {
+	font-family: "Saira", sans-serif;
+	font-weight: 300;
+	line-height: 32px;
+	padding: 0 20px;
+	text-transform: uppercase;
+	color: white;
+	background-color: transparent;
+	font-size: 12px;
+	border: 2px solid white;
+}
+
+@media (orientation: portrait) and (min-width: 360px) {
+	header h1 {
+		font-size: 24px;
+	}
+
+	header h2 {
+		font-size: 24px;
+	}
+	header button {
+		margin-top: 24px;
+		font-size: 16px;
+		line-height: 40px;
+	}
+
+	header img {
+		right: -20%;
+	}
+}
+
+@media (orientation: portrait) and (min-width: 420px) {
+	header img {
+		height: 50%;
+		bottom: 0;
+		right: -20%;
+	}
+}
+
+@media (orientation: portrait) and (min-width: 768px) {
+	header p {
+		font-size: 50px;
+	}
+	header h1 {
+		margin-top: 40px;
+		font-size: 34px;
+	}
+
+	header h2 {
+		font-size: 34px;
+	}
+	header button {
+		margin-top: 40px;
+		font-size: 18px;
+		line-height: 44px;
+	}
+
+	header img {
+		height: 55%;
+		bottom: 0;
+		right: -10%;
+	}
+}
+@media (orientation: landscape) {
+	header img {
+		height: 80%;
+		bottom: 0;
+		right: -7%;
+	}
+
+	header div.welcome {
+		top: 15%;
+		left: 7%;
+		right: 48%;
+	}
+
+	header button {
+		margin-top: 40px;
+	}
+}
+@media (orientation: landscape) and (min-width: 640px) {
+	header h1 {
+		font-size: 24px;
+	}
+
+	header h2 {
+		font-size: 24px;
+	}
+
+	header button {
+		font-size: 16px;
+		line-height: 40px;
+	}
+
+	header img {
+		height: 90%;
+		right: -5%;
+	}
+}
+
+@media (orientation: landscape) and (min-width: 1024px) {
+	header p {
+		font-size: 56px;
+	}
+
+	header h1 {
+		margin-top: 30px;
+		font-size: 34px;
+	}
+
+	header h2 {
+		font-size: 34px;
+	}
+
+	header button {
+		margin-top: 80px;
+		font-size: 24px;
+		line-height: 60px;
+	}
+
+	header img {
+		right: -20%;
+		height: 90%;
+	}
+
+	header div.welcome {
+		top: 15%;
+		left: 3%;
+		right: 48%;
+	}
+}
+
+@media (orientation: landscape) and (min-width: 1280px) {
+	header div.welcome {
+		text-align: left;
+		left: 5%;
+	}
+	header p {
+		font-size: 100px;
+	}
+
+	header h1 {
+		margin-top: 40px;
+		font-size: 50px;
+	}
+
+	header h2 {
+		font-size: 50px;
+	}
+
+	header button {
+		margin-top: 80px;
+		font-size: 30px;
+		line-height: 80px;
+		padding: 0 40px;
+		border-width: 2px;
+	}
+
+	header img {
+		height: 85%;
+		bottom: 0;
+		right: -10%;
+	}
+}
+
+@media (orientation: landscape) and (min-width: 1600px) {
+	header p {
+		font-size: 120px;
+	}
+
+	header h1 {
+		margin-top: 40px;
+		font-size: 60px;
+	}
+
+	header h2 {
+		font-size: 60px;
+	}
+
+	header button {
+		margin-top: 100px;
+		line-height: 80px;
+		padding: 0 40px;
+	}
+
+	header img {
+		height: 90%;
+		right: -7%;
+	}
+}
+
+@media (min-width: 1024px) {
+	header button:hover {
+		cursor: pointer;
+		background-color: white;
+		color: #111;
+		transition: 0.3s;
+	}
+}
+section {
+	height: 100vh;
+}
