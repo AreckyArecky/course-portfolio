@@ -9,6 +9,14 @@ font-family: 'Saira Condensed', sans-serif; */
 	box-sizing: border-box;
 }
 
+.clearfix::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+/* HEADER */
+
 header {
 	position: relative;
 	height: 100vh;
@@ -250,6 +258,228 @@ header button {
 		transition: 0.3s;
 	}
 }
-section {
+/* section {
 	height: 100vh;
+} */
+
+/* SECTION FEATURES */
+
+.features {
+	max-width: 1600px;
+	margin: 50px auto 0;
+	padding: 5%;
+	text-align: center;
+}
+
+.features h1 {
+	font-family: "Saira Condensed", sans-serif;
+	font-size: 26px;
+	text-transform: uppercase;
+	margin-bottom: 15px;
+}
+
+.features img {
+	width: 100%;
+	margin: 5px 0;
+	max-width: 375px;
+}
+
+.features h2 {
+	font-family: "Saira Condensed", sans-serif;
+	font-size: 22px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.features p {
+	font-family: "Saira", sans-serif;
+	font-weight: 300;
+	font-size: 12px;
+	margin: 20px 0;
+}
+
+@media (min-width: 360px) {
+	.features p {
+		font-size: 16px;
+	}
+	.features h1 {
+		font-size: 28px;
+	}
+	.features h2 {
+		font-size: 24px;
+	}
+}
+
+@media (min-width: 768px) {
+	.features p {
+		font-size: 20px;
+	}
+	.features h1 {
+		font-size: 34px;
+	}
+	.features h2 {
+		font-size: 28px;
+	}
+}
+
+@media (min-width: 1024px) {
+	.features {
+		margin-top: 50px;
+		padding: 5% 2%;
+		text-align: center;
+	}
+
+	.feature {
+		float: left;
+		width: 33%;
+		padding: 30px;
+	}
+	.features p {
+		font-size: 16px;
+		line-height: 120%;
+		padding: 0 10px;
+	}
+	.features h1 {
+		font-size: 34px;
+	}
+	.features h2 {
+		font-size: 20px;
+	}
+}
+
+@media (min-width: 1600px) {
+	.feature {
+		padding: 60px;
+	}
+	.features p {
+		font-size: 21px;
+		line-height: 160%;
+		padding: 0 10px;
+	}
+	.features h1 {
+		font-size: 60px;
+	}
+	.features h2 {
+		font-size: 30px;
+	}
+}
+
+/* PROJECTS */
+
+.portfolio {
+	background-color: black;
+	padding: 10px 0 30px;
+}
+
+.portfolio h1 {
+	font-family: "Saira condensed", sans-serif;
+	font-size: 28px;
+	text-align: center;
+	text-transform: uppercase;
+	color: white;
+	padding: 10px 20px;
+	margin-bottom: 15px;
+}
+
+.portfolio .web img {
+	width: 100%;
+}
+
+.portfolio .about {
+	color: white;
+	font-family: "Saira", sans-serif;
+	font-weight: normal;
+	padding: 10px 20px 20px 0px;
+	text-align: left;
+}
+.portfolio .about h2 {
+	font-size: 18px;
+	text-transform: uppercase;
+	border-bottom: 2px solid white;
+	margin-bottom: 12px;
+	padding-bottom: 16px;
+	text-indent: 20px;
+}
+.portfolio .about p {
+	font-size: 12px;
+	padding: 20px;
+}
+
+.portfolio .project {
+	margin: 0 auto 20px;
+	max-width: 1400px;
+}
+
+.portfolio .project:nth-of-type(odd) {
+	background-color: #ff4f2c;
+}
+.portfolio .project:nth-of-type(even) {
+	background-color: #29a6dc;
+}
+
+@media (min-width: 768px) {
+	.portfolio h1 {
+		font-size: 40px;
+	}
+
+	.portfolio .about h2 {
+		font-size: 28px;
+		text-indent: 40px;
+	}
+
+	.portfolio .about p {
+		font-size: 18px;
+		padding-left: 40px;
+	}
+
+	.portfolio .project {
+		margin-bottom: 40px;
+	}
+}
+@media (orientation: landscape) {
+	.web,
+	.about {
+		float: left;
+		width: 50%;
+	}
+	/* .web {
+		padding: 10% 0;
+		background-color: #fff;
+	} */
+	.web img {
+		display: block;
+	}
+
+	.project:nth-of-type(even) .web {
+		float: right;
+	}
+	.project:nth-of-type(even) .about {
+		padding-right: 0;
+	}
+}
+@media (orientation: landscape) and (min-width: 1400px) {
+	.portfolio h1 {
+		font-size: 60px;
+		padding: 30px 0;
+	}
+
+	.web {
+		padding: 0;
+	}
+	.portfolio .about h2 {
+		padding-top: 50px;
+		font-size: 28px;
+		text-indent: 40px;
+		margin-bottom: 40px;
+	}
+
+	.portfolio .about p {
+		font-size: 18px;
+		padding-left: 40px;
+		line-height: 200%;
+	}
+
+	.portfolio .project {
+		margin-bottom: 40px;
+	}
 }
