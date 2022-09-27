@@ -483,3 +483,80 @@ header button {
 		margin-bottom: 40px;
 	}
 }
+
+/* SLOGAN */
+.slogan {
+	text-align: center;
+	background-image: url(/img/motto.jpg);
+	background-size: cover;
+	background-position: top center;
+	background-attachment: fixed;
+}
+
+.slogan .bg {
+	padding: 30px 10px;
+	background-color: rgba(0, 63, 114, 0.5);
+}
+.slogan h1 {
+	font-family: "Saira Condensed", sans-serif;
+	font-size: 26px;
+	text-transform: uppercase;
+	margin-bottom: 25px;
+	color: white;
+}
+
+.slogan p {
+	font-family: "Saira", sans-serif;
+	font-size: 18px;
+	color: white;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+p.author {
+	margin-top: 20px;
+	font-size: 12px;
+}
+
+@media (orientation: landscape) {
+	.slogan p {
+		width: 70%;
+	}
+}
+
+@media (min-width: 768px) {
+	.slogan .bg {
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+	.slogan h1 {
+		font-size: 48px;
+		margin-bottom: 35px;
+	}
+
+	.slogan p {
+		font-size: 26px;
+	}
+	p.author {
+		margin-top: 40px;
+		font-size: 18px;
+	}
+}
+@media (min-width: 1024px) {
+	.slogan .bg {
+		padding-top: 80px;
+		padding-bottom: 80px;
+	}
+	.slogan h1 {
+		font-size: 60px;
+		margin-bottom: 45px;
+	}
+
+	.slogan p {
+		font-size: 40px;
+	}
+	p.author {
+		margin-top: 40px;
+		font-size: 26px;
+	}
+}
